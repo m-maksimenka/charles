@@ -75,3 +75,47 @@ weight: int
 **Task:**  
 Сделать и в Rewrite, и в BreakPoint (можно отключить, чтобы не стопило на каждом запросе).
 Подменить параметры запроса в Charles так, чтобы в Postman пришел ответ, где другой name, daily_food > weight из запроса, а daily_sleep < weight из запроса.
+
+## Ex_4:
+Method: GET  
+EndPoint: /object_info_3  
+Request url params:  
+name: str  
+age: int  
+salary: int  
+
+**Response:**  
+```sh
+{
+    'name': name,
+    'age': age,
+    'salary': salary,
+    'family': {
+        'children': [
+            [
+                'Alex', 
+                24
+            ], 
+            [
+                'Kate', 
+                12
+            ]
+        ],
+        'pets': {
+            'cat': {
+                'name':'Sunny',
+                'age': 3
+            },
+            'dog': {
+                'name':'Luky',
+                'age': 4
+            }
+        },
+        'u_salary_1_5_year': salary * 4
+    }
+}
+```
+**Task:**  
+Сделать и в Rewrite, и в BreakPoint (можно отключить, чтобы не стопило на каждом запросе).  
+- Сделать через Charles так, чтобы сервер вернул 500 код.
+- Сделать через Charles так, чтобы сервер вернул 405 код.
