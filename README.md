@@ -54,3 +54,24 @@ salary: int
 **Task:** 
 Сделать и в Rewrite, и в BreakPoint (можно отключить, чтобы не стопило на каждом запросе).  
 Подменить body в Charles так, чтобы в запросе ушла salary, которую вы вписали в Postman, а в u_salary_1_5_year цифра вернулась меньше оригинальной из запроса.
+
+## Ex_3:  
+Method: GET  
+EndPoint: /object_info_1  
+Request url params:   
+name: str  
+age: int  
+weight: int  
+
+**Response:**  
+```sh
+{
+    'name': name,
+    'age': age,
+    'daily_food': weight * 0.012,
+    'daily_sleep': weight * 2.5
+}
+```
+**Task:**  
+Сделать и в Rewrite, и в BreakPoint (можно отключить, чтобы не стопило на каждом запросе).
+Подменить параметры запроса в Charles так, чтобы в Postman пришел ответ, где другой name, daily_food > weight из запроса, а daily_sleep < weight из запроса.
