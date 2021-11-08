@@ -177,4 +177,4 @@ salary: int
 - Сделать через Charles так, чтобы в Postman вернулся ответ, в котором qa_salary_after_1.5_year переименовано в qa_salary_after_1.5_month.
 - Сделать так, чтобы qa_salary_after_3.5_years было меньше qa_salary_after_12_months в response.  
 
-Все настройки Charles [!выгрузить](https://github.com/m-maksimenka/charles/blob/main/charles_settings.xml) в GitHub.
+Все настройки Charles [выгрузить](https://github.com/m-maksimenka/charles/blob/main/charles_settings.xml) в GitHub.
